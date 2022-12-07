@@ -1,0 +1,1 @@
+public delegate void AmazonIAP_purchaseSuccessfulEvent(AmazonReceipt receipt);

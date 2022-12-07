@@ -1,0 +1,1 @@
+public delegate void UIAnimationEnd_CallBackEvent(UIAnimationControl control);

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1347936200162165}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1347936200162165
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Component:
+  - 4: {fileID: 4675941188641703}
+  - 33: {fileID: 33910737820143449}
+  - 23: {fileID: 23585767084355190}
+  - 114: {fileID: 114548104976541661}
+  - 65: {fileID: 65374633682353551}
+  - 54: {fileID: 54876337874135183}
+  m_Layer: 23
+  m_Name: Bullet_NeutronRifle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4675941188641703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_LocalRotation: {x: -1.15202326E-07, y: -0.7071068, z: -0.7071068, w: 1.15202326E-07}
+  m_LocalPosition: {x: 0.10958105, y: 0.11584292, z: 3.2621212}
+  m_LocalScale: {x: 0.1, y: 0.30909148, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!33 &33910737820143449
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_Mesh: {fileID: 4300000, guid: dae18518d1ee4764588887b4f0622bf9, type: 2}
+--- !u!23 &23585767084355190
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: c31172edbf31193489b6f9e9f15b5f07, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!114 &114548104976541661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c99a45036fdfe4bb8cd6434a07ae54, type: 3}
+  m_Name:
+  BulletHitPrefab: {fileID: 1548432218068828, guid: cc77d1ecb89161e42a9ffccb45995424, type: 2}
+  ShadowLightPrefab: {fileID: 1817775617316694, guid: 88dac28806c330341b694865bcce04d5, type: 2}
+  ShadowPosOffset: {x: 0, y: 0, z: 0}
+  flashFrameTime: -1
+  shadowLightScale: {x: 0.4, y: 0.3, z: 1}
+  shadowLightFlashMaxAlpha: 0.4
+  showShadowLight: 1
+  isMassacreCannonSubBullet: 0
+  initAngel: 0
+--- !u!65 &65374633682353551
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 5, y: 10.298946, z: 0.5}
+  m_Center: {x: 0, y: -2.8562036, z: 0}
+--- !u!54 &54876337874135183
+Rigidbody:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347936200162165}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

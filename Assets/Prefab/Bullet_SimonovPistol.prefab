@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1300008676323295}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1300008676323295
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Component:
+  - 4: {fileID: 4962905951184353}
+  - 33: {fileID: 33583858291578034}
+  - 23: {fileID: 23031965232257062}
+  - 114: {fileID: 114989492505048716}
+  - 65: {fileID: 65230508835103895}
+  - 54: {fileID: 54611712281240064}
+  m_Layer: 23
+  m_Name: Bullet_SimonovPistol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4962905951184353
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_LocalRotation: {x: -1.15202326E-07, y: -0.7071068, z: -0.7071068, w: 1.15202326E-07}
+  m_LocalPosition: {x: -0.03271123, y: 0.1750683, z: 2.8172948}
+  m_LocalScale: {x: 0.07, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!33 &33583858291578034
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_Mesh: {fileID: 4300000, guid: dae18518d1ee4764588887b4f0622bf9, type: 2}
+--- !u!23 &23031965232257062
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 615d1748da1ed8d4fbe8d60dcd47f507, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!114 &114989492505048716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c99a45036fdfe4bb8cd6434a07ae54, type: 3}
+  m_Name:
+  BulletHitPrefab: {fileID: 1966104047536029, guid: 53dc1a138eba92e4ab45b9b14e4ee851, type: 2}
+  ShadowLightPrefab: {fileID: 1817775617316694, guid: 88dac28806c330341b694865bcce04d5, type: 2}
+  ShadowPosOffset: {x: 0, y: 0, z: 0}
+  flashFrameTime: -1
+  shadowLightScale: {x: 0.4, y: 0.2, z: 1}
+  shadowLightFlashMaxAlpha: 0.4
+  showShadowLight: 1
+  isMassacreCannonSubBullet: 0
+  initAngel: 0
+--- !u!65 &65230508835103895
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 5, y: 13.304972, z: 0.5}
+  m_Center: {x: -0.33012503, y: -4.794, z: 0}
+--- !u!54 &54611712281240064
+Rigidbody:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300008676323295}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
