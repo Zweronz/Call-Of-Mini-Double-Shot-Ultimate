@@ -2472,6 +2472,7 @@ namespace Zombie3D
 			case WeaponType.NeutronRifle:
 			case WeaponType.BigFirework:
 			case WeaponType.Stormgun:
+			case WeaponType.RPG_4:
 				return "_RPG";
 			case WeaponType.RemingtonPipe:
 			case WeaponType.ParkerGaussRifle:

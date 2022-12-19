@@ -3281,6 +3281,8 @@ public class ShopUIScript : MonoBehaviour, UIHandler
 			return new Rect(740f, 444f, 185f, 111f);
 		case WeaponType.Ion_CannonSub:
 			return new Rect(300f, 555f, 185f, 111f);
+		case WeaponType.RPG_4:
+			return new Rect(555f, 555f, 185f, 111f);
 		default:
 			return new Rect(0f, 0f, 0f, 0f);
 		}
