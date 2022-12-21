@@ -30,6 +30,7 @@ namespace Zombie3D
 		Messiah = 25,
 		Ion_Cannon = 26,
 		Ion_CannonI = 27,
-		Ion_CannonSub = 28
+		Ion_CannonSub = 28,
+		RPG_4 = 29
 	}
 }
