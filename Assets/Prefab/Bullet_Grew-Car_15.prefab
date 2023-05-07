@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,20 +11,19 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1880887714544540}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1880887714544540
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4254600203252709}
-  - 33: {fileID: 33085923972878098}
-  - 23: {fileID: 23395553613926132}
-  - 114: {fileID: 114861011443997270}
-  - 65: {fileID: 65602090193179213}
-  - 54: {fileID: 54149024850440870}
+  - component: {fileID: 4254600203252709}
+  - component: {fileID: 33085923972878098}
+  - component: {fileID: 23395553613926132}
+  - component: {fileID: 114861011443997270}
+  - component: {fileID: 65602090193179213}
+  - component: {fileID: 54149024850440870}
   m_Layer: 23
   m_Name: Bullet_Grew-Car_15
   m_TagString: Untagged
@@ -38,18 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1880887714544540}
-  m_LocalRotation: {x: -1.15202326E-07, y: -0.7071068, z: -0.7071068, w: 1.15202326E-07}
-  m_LocalPosition: {x: 0.1016995, y: 0.38638997, z: 2.5184216}
+  m_LocalRotation: {x: -0.000000115202326, y: -0.7071068, z: -0.7071068, w: 0.000000115202326}
+  m_LocalPosition: {x: 0.1016995, y: 0, z: 2.5184216}
   m_LocalScale: {x: 0.13137868, y: 0.197068, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!33 &33085923972878098
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1880887714544540}
-  m_Mesh: {fileID: 4300000, guid: dae18518d1ee4764588887b4f0622bf9, type: 2}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23395553613926132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59,15 +53,65 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 3a1cd122e3fa8c64aaa31d4607bfff14, type: 2}
-  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33085923972878098
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880887714544540}
+  m_Mesh: {fileID: 4300000, guid: dae18518d1ee4764588887b4f0622bf9, type: 2}
+--- !u!54 &54149024850440870
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880887714544540}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65602090193179213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880887714544540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5.886027, z: 0.5}
+  m_Center: {x: -0.09486833, y: 0, z: 0}
 --- !u!114 &114861011443997270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,9 +121,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75c99a45036fdfe4bb8cd6434a07ae54, type: 3}
-  m_Name:
-  BulletHitPrefab: {fileID: 1244977765044922, guid: 28870b8e4d6259d45b3fc0eced237f20, type: 2}
-  ShadowLightPrefab: {fileID: 1487349627965177, guid: b3de0e6f1a6851749892fa0c0ea3cbdd, type: 2}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletHitPrefab: {fileID: 1244977765044922, guid: 28870b8e4d6259d45b3fc0eced237f20,
+    type: 2}
+  ShadowLightPrefab: {fileID: 1487349627965177, guid: b3de0e6f1a6851749892fa0c0ea3cbdd,
+    type: 2}
   ShadowPosOffset: {x: 0, y: 0, z: 0}
   flashFrameTime: -1
   shadowLightScale: {x: 0.5, y: 0.3, z: 1}
@@ -87,30 +134,3 @@ MonoBehaviour:
   showShadowLight: 1
   isMassacreCannonSubBullet: 0
   initAngel: 0
---- !u!65 &65602090193179213
-BoxCollider:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1880887714544540}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Size: {x: 5, y: 5.886027, z: 0.5}
-  m_Center: {x: -0.09486833, y: 0, z: 0}
---- !u!54 &54149024850440870
-Rigidbody:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1880887714544540}
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
